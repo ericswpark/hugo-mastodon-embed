@@ -4,7 +4,7 @@ Shortcode to embed iframes and Hugo shortcode
 
 Works for iframe URLs and files such as PDFs.
 
-# Usage
+# Installation
 
 ## Hugo Module
 
@@ -39,7 +39,9 @@ git submodule add https://github.com/ericswpark/hugo-iframe.git themes/hugo-ifra
 theme = ["hugo-iframe", "default-theme-name"]
 ```
 
-3. Add the following snippet where you want to embed iframes:
+# Usage
+
+Add the following snippet where you want to embed iframes:
 
 ```
 {{< iframe url="https://example.com/iframe/src/url/" >}}
