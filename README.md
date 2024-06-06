@@ -6,6 +6,27 @@ Works for iframe URLs and files such as PDFs.
 
 # Usage
 
+## Hugo Module
+
+1. Add the repository as a Hugo module
+
+```
+hugo mod get github.com/ericswpark/hugo-iframe
+```
+
+2. Add to your `config.toml`:
+
+```toml
+# Modules
+[module]
+  # Other module imports here...
+  [[module.imports]]
+    path = "github.com/ericswpark/hugo-iframe"
+    disable = false
+```
+
+## Git Submodule (deprecated)
+
 1. Add the repository as a submodule
 
 ```
@@ -24,4 +45,3 @@ theme = ["hugo-iframe", "default-theme-name"]
 {{< iframe url="https://example.com/iframe/src/url/" >}}
 {{< iframe url="/path/to/file.pdf" >}}
 ```
-
