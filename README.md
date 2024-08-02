@@ -45,8 +45,14 @@ Add the following snippet where you want to embed a Mastodon toot:
 {{< mastodon server_base="tilde.zone" username="ericswpark" toot_id="109522335209661741" >}}
 ```
 
+You'll see something like this on the page:
+
+<iframe src="https://tilde.zone/@ericswpark/109522335209661741/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="800" allowfullscreen="allowfullscreen"></iframe><script src="https://tilde.zone/embed.js" async="async"></script>
+
 If the default width of 800 is too big, you can change it:
 
 ```
 {{< mastodon server_base="tilde.zone" username="ericswpark" toot_id="109522335209661741" width="400" >}}
 ```
+
+<iframe src="https://tilde.zone/@ericswpark/109522335209661741/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://tilde.zone/embed.js" async="async"></script>
