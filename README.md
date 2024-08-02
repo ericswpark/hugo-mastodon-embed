@@ -1,8 +1,6 @@
-# hugo-iframe
+# hugo-mastodon-embed
 
-Shortcode to embed iframes and Hugo shortcode
-
-Works for iframe URLs and files such as PDFs.
+Shortcode to embed Mastodon toots
 
 # Installation
 
@@ -11,7 +9,7 @@ Works for iframe URLs and files such as PDFs.
 1. Add the repository as a Hugo module
 
 ```
-hugo mod get github.com/ericswpark/hugo-iframe
+hugo mod get github.com/ericswpark/hugo-mastodon-embed
 ```
 
 2. Add to your `config.toml`:
@@ -21,7 +19,7 @@ hugo mod get github.com/ericswpark/hugo-iframe
 [module]
   # Other module imports here...
   [[module.imports]]
-    path = "github.com/ericswpark/hugo-iframe"
+    path = "github.com/ericswpark/hugo-mastodon-embed"
     disable = false
 ```
 
@@ -30,20 +28,25 @@ hugo mod get github.com/ericswpark/hugo-iframe
 1. Add the repository as a submodule
 
 ```
-git submodule add https://github.com/ericswpark/hugo-iframe.git themes/hugo-iframe
+git submodule add https://github.com/ericswpark/hugo-mastodon-embed.git themes/hugo-mastodon-embed
 ```
 
-2. Add `hugo-iframe` as a theme in your `config.toml`:
+2. Add `hugo-mastodon-embed` as a theme in your `config.toml`:
 
 ```
-theme = ["hugo-iframe", "default-theme-name"]
+theme = ["hugo-mastodon-embed", "default-theme-name"]
 ```
 
 # Usage
 
-Add the following snippet where you want to embed iframes:
+Add the following snippet where you want to embed a Mastodon toot:
 
 ```
-{{< iframe url="https://example.com/iframe/src/url/" >}}
-{{< iframe url="/path/to/file.pdf" >}}
+{{< mastodon server_base="tilde.zone" username="ericswpark" toot_id="109522335209661741" >}}
+```
+
+If the default width of 800 is too big, you can change it:
+
+```
+{{< mastodon server_base="tilde.zone" username="ericswpark" toot_id="109522335209661741" width="400" >}}
 ```

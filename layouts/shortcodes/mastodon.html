@@ -1,0 +1,5 @@
+<p align="center">
+  <iframe src='https://{{ .Get "server_base" }}/@{{ .Get "username" }}/{{ .Get "toot_id" }}/embed' class="mastodon-embed" style="max-width: 100%; border: 0" width='{{ if .Get "width" }}{{ .Get "width" }}{{ else }}800{{ end }}' allowfullscreen="allowfullscreen"></iframe>
+  <script src='https://{{ .Get "server_base" }}/embed.js' async="async"></script>
+</p>
+

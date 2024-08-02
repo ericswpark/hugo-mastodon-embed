@@ -1,3 +1,3 @@
-module github.com/ericswpark/hugo-iframe
+module github.com/ericswpark/hugo-mastodon-embed
 
 go 1.22.4
